@@ -41,18 +41,20 @@
       <div style="height: 25px;"></div>
 
       <ion-label style="margin-left: 20px;margin-bottom:0px;margin-top: 20px;font-size: 18px;" class="form_label" >Longitude : </ion-label>
-      <input focusable="false" readonly style="border: none;" type="integer" name="Longitude" ngModel   [(ngModel)]="Incident.longitude" [value]="longitude">
+      <span>{{Incident.longitude}}</span>
+      
       
       <div style="height: 25px;"></div>
 
       <ion-label style="margin-left: 20px;margin-bottom:0px;margin-top: 20px;font-size: 18px;" class="form_label" >Latitude &nbsp;&nbsp;&nbsp;: </ion-label>
-      <input focusable="false" readonly style="border: none;" type="integer" name="Latitude"  ngModel   [(ngModel)]="Incident.latitude"  [value]="latitude" >
+      <span>{{Incident.latitude}}</span>
+      
       
       <div style="height: 25px;"></div>
 
       <ion-label style="margin-left: 20px;margin-bottom:0px;margin-top: 20px;font-size: 18px;" class="form_label" >Province &nbsp;&nbsp;: </ion-label>
-      <input focusable="false" readonly style="border: none;" type="text" name="Province"  ngModel   [(ngModel)]="Incident.province.province"  [value]="Province" >
-
+      
+      <span>{{Incident.province.province}}</span>
       <ion-card *ngIf="Incident.photo!=undefined">
         <ion-card-content >
           <ion-img [src]="Incident.photo"></ion-img>
